@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="./src/main.css" />
     </head>
 
-    <body class="bg-gray-100 dark:bg-slate-800 text-slate-900">
+    <body class="bg-[#f5f5f5] dark:bg-slate-800 text-slate-900">
         <!-- Header Section -->
         <header
             class="sticky top-0 flex items-center justify-between px-3 sm:px-5 lg:px-10 py-3 bg-white dark:bg-slate-800 shadow-lg z-10"
@@ -83,7 +83,7 @@
             <div class="flex items-center gap-5 h-full">
                 <!-- Buttons for medium to higher screen -->
                 <button
-                    class="hidden sm:inline-block bg-redOrange hover:bg-transparent text-white hover:text-redOrange px-5 py-2 border-2 border-redOrange rounded-lg transition-all duration-200 active:scale-95"
+                    class="hidden sm:inline-block bg-redOrange hover:bg-transparent dark:hover:bg-slate-900 text-white hover:text-redOrange px-5 py-2 border-2 border-redOrange rounded-lg transition-all duration-200 active:scale-95"
                 >
                     Register Interest
                 </button>
@@ -96,7 +96,7 @@
                         viewBox="0 0.5 24 24"
                         stroke-width="2"
                         stroke="currentColor"
-                        class="size-6 inline-block dark:hidden"
+                        class="size-6 stroke-slate-800 inline-block dark:hidden"
                     >
                         <path
                             stroke-linecap="round"
@@ -125,7 +125,7 @@
                 <div class="inline-block lg:hidden relative">
                     <!-- Menu button for medium & lower screen -->
                     <button
-                        class="p-3 rounded-full bg-gray-100 dark:bg-slate-600 text-black dark:text-white phoneMenu"
+                        class="p-3 rounded-full bg-gray-100 dark:bg-slate-600 phoneMenu"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +133,7 @@
                             viewBox="0 0 24 24"
                             stroke-width="2"
                             stroke="currentColor"
-                            class="size-6"
+                            class="size-6 stroke-slate-800 dark:stroke-white"
                         >
                             <path
                                 stroke-linecap="round"
@@ -195,7 +195,7 @@
                         <!-- Buttons display extra small screen to small screen -->
                         <div class="flex sm:hidden flex-col gap-5 px-5">
                             <button
-                                class="flex items-center justify-center gap-2 sm:gap-5 px-3 py-2 rounded-full bg-transparent text-sm sm:text-base hover:bg-redOrange hover:text-white dark:text-white border-2 border-black dark:border-white hover:border-redOrange transition-all duration-200 active:scale-95 mode-switch-2"
+                                class="flex items-center justify-center gap-2 sm:gap-5 px-3 py-2 rounded-full bg-transparent text-sm sm:text-base hover:bg-redOrange hover:text-white dark:text-white border-2 border-slate-800 dark:border-white hover:border-redOrange transition-all duration-200 active:scale-95 mode-switch-2"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -238,6 +238,56 @@
                 </div>
             </div>
         </header>
+
+        <!-- Hero Section -->
+        <section
+            class="relative bg-[url('/src/img/banner-bg.png')] bg-center bg-cover text-center"
+        >
+            <div
+                class="px-40 py-20 backdrop-brightness-100 dark:backdrop-brightness-[0.65] size-full"
+            >
+                <p
+                    class="text-sm sm:text-lg font-bold text-white mb-5 tracking-wide"
+                >
+                    Discover
+                    <span class="text-redOrange"> - </span>
+                    Interact
+                    <span class="text-redOrange"> - </span>
+                    Engage
+                </p>
+
+                <h1 class="text-[56px] font-bold text-white leading-[75px]">
+                    Connecting
+                    <span class="text-redOrange underline">talent</span>
+                    to opportunity through
+                    <span class="text-redOrange underline">skills</span>
+                </h1>
+
+                <p class="text-xl text-white mt-10 leading-[36px]">
+                    We foster a skill-focused environment, enabling students to
+                    navigate their careers with their self-paced learning
+                    journey and businesses to gain market-ready talent.
+                </p>
+
+                <button
+                    class="bg-white hover:bg-redOrange text-redOrange hover:text-white active:scale-95 text-lg font-bold px-8 py-3 border-2 border-white rounded-full mt-10 transition-all duration-300"
+                >
+                    Ask questions
+                </button>
+
+                <div class="relative h-[180px]"></div>
+            </div>
+            <img
+                class="absolute left-0 bottom-[-1px] w-full inline-block dark:hidden"
+                src="./src/img/wave.png"
+                alt="wave"
+            />
+            <img
+                class="absolute left-0 bottom-[-1px] w-full hidden dark:inline-block"
+                src="./src/img/wave-for-dark.png"
+                alt="wave"
+            />
+        </section>
 
         <script>
             const htmlTag = document.querySelector("html"),
