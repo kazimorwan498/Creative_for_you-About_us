@@ -8,7 +8,6 @@ module.exports = {
                 redOrange: "rgb(244, 67, 53)",
                 springGreen: "rgb(0,255,132)",
                 bunting: "rgb(45, 49, 66)",
-                salmon: "rgb(255,125,114)",
             },
         },
     },

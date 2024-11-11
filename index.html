@@ -120,6 +120,122 @@
                         />
                     </svg>
                 </button>
+
+                <!-- Nav for small & smaller screen -->
+                <div class="inline-block lg:hidden relative">
+                    <!-- Menu button for medium & lower screen -->
+                    <button
+                        class="p-3 rounded-full bg-gray-100 dark:bg-slate-600 text-black dark:text-white phoneMenu"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            class="size-6"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                            />
+                        </svg>
+                    </button>
+
+                    <!-- Nav display extra small screen to medium screen -->
+                    <nav
+                        class="hidden absolute top-[60px] right-0 w-48 bg-gray-100 dark:bg-slate-800 shadow-lg py-5 rounded-lg phoneNav border border-redOrange"
+                    >
+                        <ul class="space-y-2">
+                            <li
+                                class="hover:bg-redOrange hover:text-white dark:text-white transition-all duration-200 cursor-pointer"
+                            >
+                                <a
+                                    class="block text-sm sm:text-base py-2 px-7"
+                                    href="#"
+                                    >Home</a
+                                >
+                            </li>
+                            <li
+                                class="text-white bg-redOrange transition-all duration-200 cursor-pointer"
+                            >
+                                <a
+                                    class="block text-sm sm:text-base py-2 px-7"
+                                    href="#"
+                                    >About us</a
+                                >
+                            </li>
+                            <li
+                                class="hover:bg-redOrange hover:text-white dark:text-white transition-all duration-200 cursor-pointer"
+                            >
+                                <a
+                                    class="block text-sm sm:text-base py-2 px-7"
+                                    href="#"
+                                    >Upskill</a
+                                >
+                            </li>
+                            <li
+                                class="hover:bg-redOrange hover:text-white dark:text-white transition-all duration-200 cursor-pointer"
+                            >
+                                <a
+                                    class="block text-sm sm:text-base py-2 px-7"
+                                    href="#"
+                                >
+                                    Contact us
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Horizontal line display extra small screen to small screen -->
+                        <span
+                            class="block sm:hidden w-full h-[1px] bg-gray-400 dark:bg-slate-700 my-5"
+                        ></span>
+
+                        <!-- Buttons display extra small screen to small screen -->
+                        <div class="flex sm:hidden flex-col gap-5 px-5">
+                            <button
+                                class="flex items-center justify-center gap-2 sm:gap-5 px-3 py-2 rounded-full bg-transparent text-sm sm:text-base hover:bg-redOrange hover:text-white dark:text-white border-2 border-black dark:border-white hover:border-redOrange transition-all duration-200 active:scale-95 mode-switch-2"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2"
+                                    stroke="currentColor"
+                                    class="size-5 sm:size-6 inline-block dark:hidden"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+                                    />
+                                </svg>
+
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2"
+                                    stroke="currentColor"
+                                    class="size-5 sm:size-6 hidden dark:inline-block"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                                    />
+                                </svg>
+                                Switch Mode
+                            </button>
+                            <button
+                                class="bg-redOrange hover:bg-transparent text-sm sm:text-base text-white hover:text-redOrange px-3 sm:px-5 py-2 border-2 border-redOrange rounded-lg transition-all duration-200 active:scale-95"
+                            >
+                                Register Interest
+                            </button>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </header>
 
