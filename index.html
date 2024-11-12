@@ -244,7 +244,7 @@
             class="relative bg-[url('/src/img/banner-bg.png')] bg-center bg-cover text-center"
         >
             <div
-                class="px-40 py-20 backdrop-brightness-100 dark:backdrop-brightness-[0.65] size-full"
+                class="px-5 sm:px-20 md:px-28 lg:px-40 py-10 sm:py-20 backdrop-brightness-100 dark:backdrop-brightness-[0.65] size-full"
             >
                 <p
                     class="text-sm sm:text-lg font-bold text-white mb-5 tracking-wide"
@@ -256,37 +256,45 @@
                     Engage
                 </p>
 
-                <h1 class="text-[56px] font-bold text-white leading-[75px]">
+                <h1
+                    class="text-[30px] sm:text-[40px] lg:text-[56px] font-bold text-white leading-[45px] sm:leading-[60px] lg:leading-[75px]"
+                >
                     Connecting
                     <span class="text-redOrange underline">talent</span>
                     to opportunity through
                     <span class="text-redOrange underline">skills</span>
                 </h1>
 
-                <p class="text-xl text-white mt-10 leading-[36px]">
+                <p
+                    class="text-sm sm:text-lg lg:text-xl text-white mt-7 sm:mt-10 leading-[22px] sm:leading-[30px] lg:leading-[36px]"
+                >
                     We foster a skill-focused environment, enabling students to
                     navigate their careers with their self-paced learning
                     journey and businesses to gain market-ready talent.
                 </p>
 
                 <button
-                    class="bg-white hover:bg-redOrange text-redOrange hover:text-white active:scale-95 text-lg font-bold px-8 py-3 border-2 border-white rounded-full mt-10 transition-all duration-300"
+                    class="bg-white hover:bg-redOrange text-redOrange hover:text-white active:scale-95 text-sm sm:text-lg font-bold px-5 sm:px-8 py-2 sm:py-3 border-2 border-white rounded-full mt-10 transition-all duration-300"
                 >
                     Ask questions
                 </button>
 
-                <div class="relative h-[180px]"></div>
+                <div class="h-[100px] sm:h-[180px]"></div>
             </div>
-            <img
-                class="absolute left-0 bottom-[-1px] w-full inline-block dark:hidden"
-                src="./src/img/wave.png"
-                alt="wave"
-            />
-            <img
-                class="absolute left-0 bottom-[-1px] w-full hidden dark:inline-block"
-                src="./src/img/wave-for-dark.png"
-                alt="wave"
-            />
+            <div
+                class="absolute left-0 bottom-[-1px] h-[100px] sm:h-[180px] w-full"
+            >
+                <img
+                    class="size-full inline-block dark:hidden"
+                    src="./src/img/wave.png"
+                    alt="wave"
+                />
+                <img
+                    class="size-full hidden dark:inline-block"
+                    src="./src/img/wave-for-dark.png"
+                    alt="wave"
+                />
+            </div>
         </section>
 
         <script>
