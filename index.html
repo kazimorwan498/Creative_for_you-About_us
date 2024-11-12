@@ -44,7 +44,7 @@
 
             <!-- Nav for large to higher screen -->
             <ul
-                class="hidden lg:flex items-center justify-center gap-5 text-black dark:text-white"
+                class="hidden lg:flex items-center justify-center gap-5 text-slate-900 dark:text-white"
             >
                 <li>
                     <a
@@ -88,7 +88,7 @@
                     Register Interest
                 </button>
                 <button
-                    class="hidden sm:inline-block p-3 rounded-full bg-gray-100 dark:bg-slate-600 text-black dark:text-white size-[50px] transition-all duration-200 active:scale-95 mode-switch"
+                    class="hidden sm:inline-block p-3 rounded-full bg-gray-100 dark:bg-slate-600 text-slate-900 dark:text-white size-[50px] transition-all duration-200 active:scale-95 mode-switch"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -260,9 +260,15 @@
                     class="text-[30px] sm:text-[40px] lg:text-[56px] font-bold text-white leading-[45px] sm:leading-[60px] lg:leading-[75px]"
                 >
                     Connecting
-                    <span class="text-redOrange underline">talent</span>
+                    <span
+                        class="text-redOrange underline decoration-[3px] underline-offset-8"
+                        >talent</span
+                    >
                     to opportunity through
-                    <span class="text-redOrange underline">skills</span>
+                    <span
+                        class="text-redOrange underline decoration-[3px] underline-offset-8"
+                        >skills</span
+                    >
                 </h1>
 
                 <p
@@ -294,6 +300,72 @@
                     src="./src/img/wave-for-dark.png"
                     alt="wave"
                 />
+            </div>
+        </section>
+
+        <!-- Empower Section -->
+        <section class="grid grid-cols-12 items-center gap-10 px-20">
+            <h2
+                class="col-span-full xl:col-span-3 text-center xl:text-start text-[40px] font-bold dark:text-white"
+            >
+                At
+                <span
+                    class="text-redOrange underline decoration-2 underline-offset-8"
+                >
+                    C4U
+                </span>
+                , We Empower:
+            </h2>
+
+            <div
+                class="col-span-4 xl:col-span-3 bg-bunting rounded-xl px-5 py-8 h-full"
+            >
+                <div
+                    class="flex items-center justify-center bg-white size-12 rounded-full mb-3"
+                >
+                    <img src="./src/img/reword-icon.png" alt="reword-icon" />
+                </div>
+                <h5 class="text-lg text-white mb-5">Students</h5>
+                <p class="text-sm text-white">
+                    We help students find their way in a fast-evolving world by
+                    creating a personalized learning journey guaranteed to help
+                    stand out in a crowded job market.
+                </p>
+            </div>
+
+            <div
+                class="col-span-4 xl:col-span-3 bg-bunting rounded-xl px-5 py-8 h-full"
+            >
+                <div
+                    class="flex items-center justify-center bg-white size-12 rounded-full mb-3"
+                >
+                    <img
+                        src="./src/img/academic-cap-icon.png"
+                        alt="academic-cap-icon"
+                    />
+                </div>
+                <h5 class="text-lg text-white mb-5">Universities</h5>
+                <p class="text-sm text-white">
+                    We help your emerging talent to unlock their full potential
+                    by combining education and work to create future-ready
+                    employees
+                </p>
+            </div>
+
+            <div
+                class="col-span-4 xl:col-span-3 bg-bunting rounded-xl px-5 py-8 h-full"
+            >
+                <div
+                    class="flex items-center justify-center bg-white size-12 rounded-full mb-3"
+                >
+                    <img src="./src/img/person-icon.png" alt="person-icon" />
+                </div>
+                <h5 class="text-lg text-white mb-5">Businesses</h5>
+                <p class="text-sm text-white">
+                    We enable businesses to tap into the diverse pool of
+                    emerging talent cultivated by universities. To co-create the
+                    future workforce and revitalize the business world.
+                </p>
             </div>
         </section>
 
