@@ -1,1017 +1,1017 @@
 <!DOCTYPE html>
 <html lang="en" class="dark scroll-smooth">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="author" content="Kazi Morwan" />
-        <meta
-            name="description"
-            content="This is my tailwind css assignment."
-        />
-        <meta
-            name="tag"
-            content="Creative for you, Responsive Website, online Course"
-        />
-        <title>About - Creative for you</title>
-        <link
-            rel="shortcut icon"
-            href="./src/img/favicon.ico"
-            type="image/x-icon"
-        />
-        <link rel="stylesheet" href="./src/main.css" />
-    </head>
-
-    <body class="bg-gray-100 dark:bg-slate-800 text-slate-900">
-        <!-- Header Section -->
-        <header
-            class="sticky top-0 flex items-center justify-between px-3 sm:px-5 lg:px-10 py-3 bg-white dark:bg-slate-800 shadow-lg z-10"
-        >
-            <div class="cursor-pointer">
-                <!-- Logo for light theme -->
-                <img
-                    class="inline-block dark:hidden"
-                    src="./src/img/logo.svg"
-                    alt="logo"
-                />
-
-                <!-- Logo for dark theme -->
-                <img
-                    class="hidden dark:inline-block"
-                    src="./src/img/logo-for-dark.svg"
-                    alt="logo"
-                />
-            </div>
-
-            <!-- Nav for large to higher screen -->
-            <ul
-                class="hidden lg:flex items-center justify-center gap-5 text-slate-900 dark:text-white"
-            >
-                <li>
-                    <a
-                        class="px-4 py-2 hover:text-redOrange font-medium transition-all duration-200"
-                        href="#"
-                    >
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="px-4 py-2 text-redOrange font-medium transition-all duration-200"
-                        href="#"
-                    >
-                        About us
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="px-4 py-2 hover:text-redOrange font-medium transition-all duration-200"
-                        href="#"
-                    >
-                        Upskill
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="px-4 py-2 hover:text-redOrange font-medium transition-all duration-200"
-                        href="#"
-                    >
-                        Contact us
-                    </a>
-                </li>
-            </ul>
-
-            <div class="flex items-center gap-5 h-full">
-                <!-- Buttons for medium to higher screen -->
-                <button
-                    class="hidden sm:inline-block bg-redOrange hover:bg-transparent dark:hover:bg-slate-900 text-white hover:text-redOrange px-5 py-2 border-2 border-redOrange rounded-lg transition-all duration-200 active:scale-95"
-                >
-                    Register Interest
-                </button>
-                <button
-                    class="hidden sm:inline-block p-3 rounded-full bg-gray-100 dark:bg-slate-600 text-slate-900 dark:text-white size-[50px] transition-all duration-200 active:scale-95 mode-switch"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 1.3 24 24"
-                        stroke-width="2"
-                        stroke="currentColor"
-                        class="size-6 stroke-slate-800 inline-block dark:hidden"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
-                        />
-                    </svg>
-
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 1.3 24 24"
-                        stroke-width="2"
-                        stroke="currentColor"
-                        class="size-6 hidden dark:inline-block"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
-                        />
-                    </svg>
-                </button>
-
-                <!-- Nav for small & smaller screen -->
-                <div class="inline-block lg:hidden relative">
-                    <!-- Menu button for medium & lower screen -->
-                    <button
-                        class="p-3 rounded-full bg-gray-100 dark:bg-slate-600 phoneMenu"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="2"
-                            stroke="currentColor"
-                            class="size-6 stroke-slate-800 dark:stroke-white"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                            />
-                        </svg>
-                    </button>
-
-                    <!-- Nav display extra small screen to medium screen -->
-                    <nav
-                        class="hidden absolute top-[60px] right-0 w-48 bg-gray-100 dark:bg-slate-800 shadow-lg py-5 rounded-lg phoneNav border border-redOrange"
-                    >
-                        <ul class="space-y-2">
-                            <li
-                                class="hover:bg-redOrange hover:text-white dark:text-white transition-all duration-200 cursor-pointer"
-                            >
-                                <a
-                                    class="block text-sm sm:text-base py-2 px-7"
-                                    href="#"
-                                    >Home</a
-                                >
-                            </li>
-                            <li
-                                class="text-white bg-redOrange transition-all duration-200 cursor-pointer"
-                            >
-                                <a
-                                    class="block text-sm sm:text-base py-2 px-7"
-                                    href="#"
-                                    >About us</a
-                                >
-                            </li>
-                            <li
-                                class="hover:bg-redOrange hover:text-white dark:text-white transition-all duration-200 cursor-pointer"
-                            >
-                                <a
-                                    class="block text-sm sm:text-base py-2 px-7"
-                                    href="#"
-                                    >Upskill</a
-                                >
-                            </li>
-                            <li
-                                class="hover:bg-redOrange hover:text-white dark:text-white transition-all duration-200 cursor-pointer"
-                            >
-                                <a
-                                    class="block text-sm sm:text-base py-2 px-7"
-                                    href="#"
-                                >
-                                    Contact us
-                                </a>
-                            </li>
-                        </ul>
-
-                        <!-- Horizontal line display extra small screen to small screen -->
-                        <span
-                            class="block sm:hidden w-full h-[1px] bg-gray-400 dark:bg-slate-700 my-5"
-                        ></span>
-
-                        <!-- Buttons display extra small screen to small screen -->
-                        <div class="flex sm:hidden flex-col gap-5 px-5">
-                            <button
-                                class="flex items-center justify-center gap-2 sm:gap-5 px-3 py-2 rounded-full bg-transparent text-sm sm:text-base hover:bg-redOrange hover:text-white dark:text-white border-2 border-slate-800 dark:border-white hover:border-redOrange transition-all duration-200 active:scale-95 mode-switch-2"
-                            >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="2"
-                                    stroke="currentColor"
-                                    class="size-5 sm:size-6 inline-block dark:hidden"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
-                                    />
-                                </svg>
-
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="2"
-                                    stroke="currentColor"
-                                    class="size-5 sm:size-6 hidden dark:inline-block"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
-                                    />
-                                </svg>
-                                Switch Mode
-                            </button>
-                            <button
-                                class="bg-redOrange hover:bg-transparent text-sm sm:text-base text-white hover:text-redOrange px-3 sm:px-5 py-2 border-2 border-redOrange rounded-lg transition-all duration-200 active:scale-95"
-                            >
-                                Register Interest
-                            </button>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </header>
-
-        <!-- Hero Section -->
-        <section
-            class="relative bg-[url('/src/img/banner-bg.png')] bg-center bg-cover text-center"
-        >
-            <div
-                class="px-5 sm:px-20 md:px-28 lg:px-40 py-10 sm:py-20 backdrop-brightness-100 dark:backdrop-brightness-[0.65] size-full"
-            >
-                <p
-                    class="text-sm sm:text-lg font-bold text-white mb-5 tracking-wide"
-                >
-                    Discover
-                    <span class="text-redOrange"> - </span>
-                    Interact
-                    <span class="text-redOrange"> - </span>
-                    Engage
-                </p>
-
-                <h1
-                    class="text-[30px] sm:text-[40px] lg:text-[56px] font-bold text-white leading-[45px] sm:leading-[60px] lg:leading-[75px]"
-                >
-                    Connecting
-                    <span
-                        class="text-redOrange underline decoration-[3px] underline-offset-8"
-                        >talent</span
-                    >
-                    to opportunity through
-                    <span
-                        class="text-redOrange underline decoration-[3px] underline-offset-8"
-                        >skills</span
-                    >
-                </h1>
-
-                <p
-                    class="text-sm sm:text-lg lg:text-xl text-white mt-7 sm:mt-10 leading-[22px] sm:leading-[30px] lg:leading-[36px]"
-                >
-                    We foster a skill-focused environment, enabling students to
-                    navigate their careers with their self-paced learning
-                    journey and businesses to gain market-ready talent.
-                </p>
-
-                <button
-                    class="bg-white hover:bg-redOrange text-redOrange hover:text-white active:scale-95 text-sm sm:text-lg font-bold px-5 sm:px-8 py-2 sm:py-3 border-2 border-white rounded-full mt-10 transition-all duration-200"
-                >
-                    Ask questions
-                </button>
-
-                <div class="h-[100px] sm:h-[180px]"></div>
-            </div>
-            <div
-                class="absolute left-0 bottom-[-1px] h-[100px] sm:h-[180px] w-full"
-            >
-                <img
-                    class="size-full inline-block dark:hidden"
-                    src="./src/img/wave.png"
-                    alt="wave"
-                />
-                <img
-                    class="size-full hidden dark:inline-block"
-                    src="./src/img/wave-for-dark.png"
-                    alt="wave"
-                />
-            </div>
-        </section>
-
-        <!-- Empower Section -->
-        <section
-            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center gap-7 lg:gap-10 px-5 sm:px-10 md:px-14 lg:px-20 mb-3"
-        >
-            <h2
-                class="col-span-full xl:col-span-1 text-center xl:text-start text-[25px] sm:text-[32px] md:text-[40px] font-bold dark:text-white"
-            >
-                At
-                <span
-                    class="text-redOrange underline decoration-2 underline-offset-8"
-                >
-                    C4U</span
-                >, We Empower:
-            </h2>
-
-            <div
-                class="bg-bunting rounded-xl px-5 py-8 h-full hover:scale-105 transition-all duration-200"
-            >
-                <div
-                    class="flex items-center justify-center bg-white size-12 rounded-full mb-3"
-                >
-                    <img src="./src/img/reword-icon.png" alt="reword-icon" />
-                </div>
-                <h5
-                    class="text-lg text-white tracking-wider sm:tracking-wide mb-5"
-                >
-                    Students
-                </h5>
-                <p
-                    class="text-xs sm:text-sm text-white/70 font-extralight tracking-wider"
-                >
-                    We help students find their way in a fast-evolving world by
-                    creating a personalized learning journey guaranteed to help
-                    stand out in a crowded job market.
-                </p>
-            </div>
-
-            <div
-                class="bg-bunting rounded-xl px-5 py-8 h-full hover:scale-105 transition-all duration-200"
-            >
-                <div
-                    class="flex items-center justify-center bg-white size-12 rounded-full mb-3"
-                >
-                    <img
-                        src="./src/img/academic-cap-icon.png"
-                        alt="academic-cap-icon"
-                    />
-                </div>
-                <h5
-                    class="text-lg text-white tracking-wider sm:tracking-wide mb-5"
-                >
-                    Universities
-                </h5>
-                <p
-                    class="text-xs sm:text-sm text-white/70 font-extralight tracking-wider"
-                >
-                    We help your emerging talent to unlock their full potential
-                    by combining education and work to create future-ready
-                    employees
-                </p>
-            </div>
-
-            <div
-                class="col-span-1 sm:col-span-2 lg:col-span-1 bg-bunting rounded-xl px-5 py-8 h-full hover:scale-105 transition-all duration-200"
-            >
-                <div
-                    class="flex items-center justify-center bg-white size-12 rounded-full mb-3"
-                >
-                    <img src="./src/img/person-icon.png" alt="person-icon" />
-                </div>
-                <h5
-                    class="text-lg text-white tracking-wider sm:tracking-wide mb-5"
-                >
-                    Businesses
-                </h5>
-                <p
-                    class="text-xs sm:text-sm text-white/70 font-extralight tracking-wider"
-                >
-                    We enable businesses to tap into the diverse pool of
-                    emerging talent cultivated by universities. To co-create the
-                    future workforce and revitalize the business world.
-                </p>
-            </div>
-        </section>
-
-        <!-- Mission Section -->
-        <section
-            class="flex flex-col-reverse md:flex-row justify-center items-center gap-y-10 gap-x-20 bg-[url('/src/img/about-bg.png')] dark:bg-[url('/src/img/about-bg-for-dark.png')] bg-right-top bg-cover pt-14 sm:pt-40 px-5 sm:px-20 relative"
-        >
-            <!-- Line & Circle -->
-            <img
-                class="absolute top-1/2 hidden md:inline-block md:h-[1060px] lg:max-[1130px]:h-[1150px] lg:h-[1250px] xl:h-[1350px]"
-                src="./src/img/line-&-circle.png"
-                alt="line-&-circle"
-            />
-            <!-- Mission Left Section -->
-            <section class="w-full md:w-1/2">
-                <span class="text-redOrange text-xs sm:text-sm uppercase">
-                    About us
-                </span>
-
-                <h3
-                    class="text-slate-800 dark:text-white text-2xl sm:text-4xl font-medium tracking-wide mt-2 sm:mt-5 mb-5 sm:mb-10"
-                >
-                    Our Mission
-                </h3>
-
-                <p
-                    class="text-slate-800 dark:text-white text-sm sm:text-base font-extralight"
-                >
-                    To create a personalized pathway for continuous learning and
-                    transferable skills development.
-                </p>
-
-                <button
-                    class="flex items-center justify-center gap-3 bg-transparent hover:bg-redOrange text-redOrange hover:text-white active:scale-95 text-sm sm:text-base font-bold tracking-wider sm:tracking-wide px-5 sm:px-8 py-2 sm:py-3 border-2 border-redOrange rounded-full mt-10 transition-all duration-200 group"
-                >
-                    Find out more
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 -1 24 24"
-                        stroke-width="3"
-                        stroke="currentColor"
-                        class="size-4 group-hover:translate-x-1 transition-transform duration-200"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                        />
-                    </svg>
-                </button>
-            </section>
-
-            <!-- Mission Right Section -->
-            <section class="w-full md:w-1/2">
-                <img
-                    class="mx-auto"
-                    src="./src/img/mission-img.png"
-                    alt="mission-img"
-                />
-            </section>
-        </section>
-
-        <!-- Vision Section -->
-        <section
-            class="flex flex-col md:flex-row justify-center items-center gap-y-10 gap-x-20 bg-[url('/src/img/about-bg.png')] dark:bg-[url('/src/img/about-bg-for-dark.png')] bg-left-top bg-cover pt-14 sm:pt-40 px-5 sm:px-20 mb-10 sm:mb-28 md:mb-60"
-        >
-            <!-- Vision Left Section -->
-            <section class="w-full md:w-1/2">
-                <img
-                    class="mx-auto"
-                    src="./src/img/vision-img.png"
-                    alt="mission-img"
-                />
-            </section>
-
-            <!-- Vision Right Section -->
-            <section class="w-full md:w-1/2">
-                <span class="text-redOrange text-xs sm:text-sm uppercase">
-                    About us
-                </span>
-
-                <h3
-                    class="text-slate-800 dark:text-white text-2xl sm:text-4xl font-medium tracking-wide mt-2 sm:mt-5 mb-5 sm:mb-10"
-                >
-                    Our Vision
-                </h3>
-
-                <p
-                    class="text-slate-800 dark:text-white text-sm sm:text-base font-extralight"
-                >
-                    To have a globally recognized strategic bridge between
-                    education and the job market
-                </p>
-
-                <button
-                    class="flex items-center justify-center gap-3 bg-transparent hover:bg-redOrange text-redOrange hover:text-white active:scale-95 text-sm sm:text-base font-bold tracking-wider sm:tracking-wide px-5 sm:px-8 py-2 sm:py-3 border-2 border-redOrange rounded-full mt-10 transition-all duration-200 group"
-                >
-                    Contact us
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 -1 24 24"
-                        stroke-width="3"
-                        stroke="currentColor"
-                        class="size-4 group-hover:translate-x-1 transition-transform duration-200"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                        />
-                    </svg>
-                </button>
-            </section>
-        </section>
-
-        <!-- C4U Working Steps Section -->
-        <section
-            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center justify-items-center gap-y-10 gap-x-20 px-8 py-14 sm:p-20 sm:pt-40 bg-white dark:bg-gray-900"
-        >
-            <section
-                class="bg-[url('/src/img/1.png')] bg-no-repeat bg-right-top w-full transition-all duration-200 group"
-            >
-                <div
-                    class="flex items-center justify-center bg-white group-hover:bg-gray-100 dark:bg-slate-800 dark:group-hover:bg-slate-700 size-16 rounded-full mb-8 transition-all duration-200"
-                >
-                    <img src="./src/img/bulb-icon.png" alt="bulb-icon" />
-                </div>
-
-                <h4
-                    class="text-lg sm:text-2xl text-slate-800 dark:text-white font-bold tracking-wide mb-5"
-                >
-                    Discover
-                </h4>
-
-                <p
-                    class="text-xs sm:text-sm text-slate-800 dark:text-white/90 font-extralight tracking-wider !leading-[24px]"
-                >
-                    We uncover students unique skills to stand out in a crowded
-                    job market
-                </p>
-            </section>
-
-            <section
-                class="bg-[url('/src/img/2.png')] bg-no-repeat bg-right-top w-full transition-all duration-200 group"
-            >
-                <div
-                    class="flex items-center justify-center bg-white group-hover:bg-gray-100 dark:bg-slate-800 dark:group-hover:bg-slate-700 size-16 rounded-full mb-8 transition-all duration-200"
-                >
-                    <img
-                        src="./src/img/ruler-pencil-icon.png"
-                        alt="ruler-pencil-icon"
-                    />
-                </div>
-
-                <h4
-                    class="text-lg sm:text-2xl text-slate-800 dark:text-white font-bold tracking-wide mb-5"
-                >
-                    Interact
-                </h4>
-
-                <p
-                    class="text-xs sm:text-sm text-slate-800 dark:text-white/90 font-extralight tracking-wider !leading-[24px]"
-                >
-                    We open doors to new opportunities by expanding your
-                    transferable skills
-                </p>
-            </section>
-
-            <section
-                class="grid-cols-1 sm:col-span-2 lg:col-span-1 bg-[url('/src/img/3.png')] bg-no-repeat bg-right-top w-full transition-all duration-200 group"
-            >
-                <div
-                    class="flex items-center justify-center bg-white group-hover:bg-gray-100 dark:bg-slate-800 dark:group-hover:bg-slate-700 size-16 rounded-full mb-8 transition-all duration-200"
-                >
-                    <img
-                        src="./src/img/up-navigation-icon.png"
-                        alt="up-navigation-icon"
-                    />
-                </div>
-
-                <h4
-                    class="text-lg sm:text-2xl text-slate-800 dark:text-white font-bold tracking-wide mb-5"
-                >
-                    Engage
-                </h4>
-
-                <p
-                    class="text-xs sm:text-sm text-slate-800 dark:text-white/90 font-extralight tracking-wider !leading-[24px]"
-                >
-                    To forester a skill focused environment that enable students
-                    to navigate their ideal career
-                </p>
-            </section>
-        </section>
-
-        <!-- Team Section -->
-        <section
-            class="px-8 md:px-14 py-20 bg-[url('/src/img/team-bg.png')] dark:bg-[url('/src/img/team-bg-for-dark.png')] bg-center bg-cover"
-        >
-            <h2
-                class="text-[25px] sm:text-[32px] md:text-[40px] font-semibold dark:text-white relative inline-block"
-            >
-                The Creative Team <br />
-                behind
-                <span class="text-redOrange"> the door </span>
-
-                <img
-                    class="absolute top-14 -right-28 hidden sm:inline-block"
-                    src="./src/img/arrow_01.png"
-                    alt="arrow"
-                />
-            </h2>
-
-            <div
-                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center gap-5 md:gap-10 text-center mt-20"
-            >
-                <div
-                    class="flex flex-col justify-center items-center bg-white dark:bg-gray-900 px-5 py-10 w-full rounded-xl shadow-xl hover:scale-105 transition-all duration-200 cursor-pointer"
-                >
-                    <img
-                        class="rounded-full mb-8"
-                        src="./src/img/team-01.png"
-                        alt="team"
-                    />
-
-                    <h4
-                        class="text-lg sm:text-2xl text-slate-800 dark:text-white font-bold text-nowrap tracking-wide mb-2"
-                    >
-                        Ekta Mahajan
-                    </h4>
-
-                    <span
-                        class="text-xs sm:text-base text-black/50 dark:text-white/50 mb-8"
-                    >
-                        Founder & C.E.O
-                    </span>
-
-                    <div class="flex gap-5">
-                        <a href="#">
-                            <img
-                                src="./src/img/phone-icon.png"
-                                alt="phone-icon"
-                            />
-                        </a>
-                        <a href="#">
-                            <img
-                                src="./src/img/mail-icon.png"
-                                alt="mail-icon"
-                            />
-                        </a>
-                        <a href="#">
-                            <img
-                                src="./src/img/linkedin-icon.png"
-                                alt="linkedin-icon"
-                            />
-                        </a>
-                    </div>
-                </div>
-
-                <div
-                    class="flex flex-col justify-center items-center bg-white dark:bg-gray-900 px-5 py-10 w-full rounded-xl shadow-xl hover:scale-105 transition-all duration-200 cursor-pointer"
-                >
-                    <img
-                        class="rounded-full mb-8"
-                        src="./src/img/team-02.png"
-                        alt="team"
-                    />
-
-                    <h4
-                        class="text-lg sm:text-2xl text-slate-800 dark:text-white font-bold text-nowrap tracking-wide mb-2"
-                    >
-                        Toby Potter-Drake
-                    </h4>
-
-                    <span
-                        class="text-xs sm:text-base text-black/50 dark:text-white/50 mb-8"
-                    >
-                        Product Manager Associate
-                    </span>
-
-                    <div class="flex gap-5">
-                        <a href="#">
-                            <img
-                                src="./src/img/phone-icon.png"
-                                alt="phone-icon"
-                            />
-                        </a>
-                        <a href="#">
-                            <img
-                                src="./src/img/mail-icon.png"
-                                alt="mail-icon"
-                            />
-                        </a>
-                        <a href="#">
-                            <img
-                                src="./src/img/linkedin-icon.png"
-                                alt="linkedin-icon"
-                            />
-                        </a>
-                    </div>
-                </div>
-
-                <div
-                    class="flex flex-col justify-center items-center bg-white dark:bg-gray-900 px-5 py-10 w-full rounded-xl shadow-xl hover:scale-105 transition-all duration-200 cursor-pointer"
-                >
-                    <img
-                        class="rounded-full mb-8"
-                        src="./src/img/team-03.png"
-                        alt="team"
-                    />
-
-                    <h4
-                        class="text-lg sm:text-2xl text-slate-800 dark:text-white font-bold text-nowrap tracking-wide mb-2"
-                    >
-                        Ross Davies
-                    </h4>
-
-                    <span
-                        class="text-xs sm:text-base text-black/50 dark:text-white/50 mb-8"
-                    >
-                        Corporate Growth Associate
-                    </span>
-
-                    <div class="flex gap-5">
-                        <a href="#">
-                            <img
-                                src="./src/img/phone-icon.png"
-                                alt="phone-icon"
-                            />
-                        </a>
-                        <a href="#">
-                            <img
-                                src="./src/img/mail-icon.png"
-                                alt="mail-icon"
-                            />
-                        </a>
-                        <a href="#">
-                            <img
-                                src="./src/img/linkedin-icon.png"
-                                alt="linkedin-icon"
-                            />
-                        </a>
-                    </div>
-                </div>
-
-                <div
-                    class="flex flex-col justify-center items-center bg-white dark:bg-gray-900 px-5 py-10 w-full rounded-xl shadow-xl hover:scale-105 transition-all duration-200 cursor-pointer"
-                >
-                    <img
-                        class="rounded-full mb-8"
-                        src="./src/img/team-04.png"
-                        alt="team"
-                    />
-
-                    <h4
-                        class="text-lg sm:text-2xl text-slate-800 dark:text-white font-bold text-nowrap tracking-wide mb-2"
-                    >
-                        Leo crozier
-                    </h4>
-
-                    <span
-                        class="text-xs sm:text-base text-black/50 dark:text-white/50 mb-8"
-                    >
-                        Software Developer
-                    </span>
-
-                    <div class="flex gap-5">
-                        <a href="#">
-                            <img
-                                src="./src/img/phone-icon.png"
-                                alt="phone-icon"
-                            />
-                        </a>
-                        <a href="#">
-                            <img
-                                src="./src/img/mail-icon.png"
-                                alt="mail-icon"
-                            />
-                        </a>
-                        <a href="#">
-                            <img
-                                src="./src/img/linkedin-icon.png"
-                                alt="linkedin-icon"
-                            />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer Section -->
-        <footer
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-10 py-16 px-8 sm:px-20"
-        >
-            <div>
-                <div class="mb-5">
-                    <!-- Logo for light theme -->
-                    <img
-                        class="inline-block dark:hidden cursor-pointer"
-                        src="./src/img/logo.svg"
-                        alt="logo"
-                    />
-
-                    <!-- Logo for dark theme -->
-                    <img
-                        class="hidden dark:inline-block cursor-pointer"
-                        src="./src/img/logo-for-dark.svg"
-                        alt="logo"
-                    />
-                </div>
-
-                <address
-                    class="flex flex-col gap-y-1 dark:text-white leading-loose not-italic"
-                >
-                    <span class="text-nowrap">Level 39</span>
-                    <span class="text-nowrap">One Canada Square,</span>
-                    <span class="text-nowrap">Canary Wharf,</span>
-                    <span class="text-nowrap">London,</span>
-                    <span class="text-nowrap">E14 5AB</span>
-                </address>
-            </div>
-
-            <ul
-                class="flex flex-col gap-5 text-slate-900 dark:text-white text-sm sm:text-base"
-            >
-                <li class="text-base sm:text-lg font-bold">
-                    <a
-                        class="hover:text-redOrange transition-all duration-200"
-                        href="#"
-                    >
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
-                        href="#"
-                    >
-                        Collaborations
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
-                        href="#"
-                    >
-                        Statistics
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
-                        href="#"
-                    >
-                        How It Works
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
-                        href="#"
-                    >
-                        Testimonials
-                    </a>
-                </li>
-            </ul>
-            <ul
-                class="flex flex-col gap-5 text-slate-900 dark:text-white text-sm sm:text-base"
-            >
-                <li class="text-base sm:text-lg font-bold">
-                    <a
-                        class="hover:text-redOrange transition-all duration-200"
-                        href="#"
-                    >
-                        About Us
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
-                        href="#"
-                    >
-                        Who We Are
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
-                        href="#"
-                    >
-                        Mission statement
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
-                        href="#"
-                    >
-                        Our Vision
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
-                        href="#"
-                    >
-                        The Team
-                    </a>
-                </li>
-            </ul>
-            <ul
-                class="flex flex-col gap-5 text-slate-900 dark:text-white text-sm sm:text-base"
-            >
-                <li class="text-base sm:text-lg font-bold">
-                    <a
-                        class="hover:text-redOrange transition-all duration-200"
-                        href="#"
-                    >
-                        Upskill
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
-                        href="#"
-                    >
-                        It Support
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
-                        href="#"
-                    >
-                        Project Management
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
-                        href="#"
-                    >
-                        Data Analysts
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
-                        href="#"
-                    >
-                        Ux Design
-                    </a>
-                </li>
-            </ul>
-            <ul
-                class="flex flex-col gap-5 text-slate-900 dark:text-white text-sm sm:text-base"
-            >
-                <li class="text-base sm:text-lg font-bold">
-                    <a
-                        class="hover:text-redOrange transition-all duration-200"
-                        href="#"
-                    >
-                        Contact Us
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
-                        href="#"
-                    >
-                        Your message
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
-                        href="#"
-                    >
-                        Email
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
-                        href="#"
-                    >
-                        Phone number
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
-                        href="#"
-                    >
-                        Linkedin
-                    </a>
-                </li>
-            </ul>
-        </footer>
-
-        <!-- Copyright Section -->
-        <p
-            class="dark:text-white text-center text-xs sm:text-sm py-5 border-t border-gray-400 dark:border-gray-700 font-extralight tracking-wider"
-        >
-            Copyright © 2024 Creatives For You LTD.
-        </p>
-
-        <script>
-            const htmlTag = document.querySelector("html"),
-                modeSwitch = document.querySelector(".mode-switch"),
-                modeSwitch2 = document.querySelector(".mode-switch-2"),
-                phoneMenu = document.querySelector(".phoneMenu"),
-                phoneNav = document.querySelector(".phoneNav");
-
-            modeSwitch.addEventListener("click", function () {
-                htmlTag.classList.toggle("dark");
-            });
-
-            modeSwitch2.addEventListener("click", function () {
-                htmlTag.classList.toggle("dark");
-            });
-
-            phoneMenu.addEventListener("click", () => {
-                phoneNav.classList.toggle("hidden");
-            });
-        </script>
-    </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Kazi Morwan" />
+		<meta
+			name="description"
+			content="This is my tailwind css assignment."
+		/>
+		<meta
+			name="tag"
+			content="Creative for you, Responsive Website, online Course"
+		/>
+		<title>About - Creative for you</title>
+		<link
+			rel="shortcut icon"
+			href="./src/img/favicon.ico"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="./src/main.css" />
+	</head>
+
+	<body class="bg-gray-100 dark:bg-slate-800 text-slate-900">
+		<!-- Header Section -->
+		<header
+			class="sticky top-0 flex items-center justify-between px-3 sm:px-5 lg:px-10 py-3 bg-white dark:bg-slate-800 shadow-lg z-10"
+		>
+			<div class="cursor-pointer">
+				<!-- Logo for light theme -->
+				<img
+					class="inline-block dark:hidden"
+					src="./src/img/logo.svg"
+					alt="logo"
+				/>
+
+				<!-- Logo for dark theme -->
+				<img
+					class="hidden dark:inline-block"
+					src="./src/img/logo-for-dark.svg"
+					alt="logo"
+				/>
+			</div>
+
+			<!-- Nav for large to higher screen -->
+			<ul
+				class="hidden lg:flex items-center justify-center gap-5 text-slate-900 dark:text-white"
+			>
+				<li>
+					<a
+						class="px-4 py-2 hover:text-redOrange font-medium transition-all duration-200"
+						href="#"
+					>
+						Home
+					</a>
+				</li>
+				<li>
+					<a
+						class="px-4 py-2 text-redOrange font-medium transition-all duration-200"
+						href="#"
+					>
+						About us
+					</a>
+				</li>
+				<li>
+					<a
+						class="px-4 py-2 hover:text-redOrange font-medium transition-all duration-200"
+						href="#"
+					>
+						Upskill
+					</a>
+				</li>
+				<li>
+					<a
+						class="px-4 py-2 hover:text-redOrange font-medium transition-all duration-200"
+						href="#"
+					>
+						Contact us
+					</a>
+				</li>
+			</ul>
+
+			<div class="flex items-center gap-5 h-full">
+				<!-- Buttons for medium to higher screen -->
+				<button
+					class="hidden sm:inline-block bg-redOrange hover:bg-transparent dark:hover:bg-slate-900 text-white hover:text-redOrange px-5 py-2 border-2 border-redOrange rounded-lg transition-all duration-200 active:scale-95"
+				>
+					Register Interest
+				</button>
+				<button
+					class="hidden sm:inline-block p-3 rounded-full bg-gray-100 dark:bg-slate-600 text-slate-900 dark:text-white size-[50px] transition-all duration-200 active:scale-95 mode-switch"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 1.3 24 24"
+						stroke-width="2"
+						stroke="currentColor"
+						class="size-6 stroke-slate-800 inline-block dark:hidden"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+						/>
+					</svg>
+
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 1.3 24 24"
+						stroke-width="2"
+						stroke="currentColor"
+						class="size-6 hidden dark:inline-block"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+						/>
+					</svg>
+				</button>
+
+				<!-- Nav for small & smaller screen -->
+				<div class="inline-block lg:hidden relative">
+					<!-- Menu button for medium & lower screen -->
+					<button
+						class="flex items-center justify-center p-3 size-[50px] rounded-full bg-gray-100 dark:bg-slate-600 text-black dark:text-white phoneMenu"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="2"
+							stroke="currentColor"
+							class="size-7"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+							/>
+						</svg>
+					</button>
+
+					<!-- Nav display extra small screen to medium screen -->
+					<nav
+						class="hidden absolute top-[60px] right-0 w-56 bg-gray-100 dark:bg-slate-800 shadow-lg py-5 rounded-lg phoneNav border border-redOrange"
+					>
+						<ul class="space-y-2">
+							<li
+								class="hover:bg-redOrange hover:text-white dark:text-white transition-all duration-200 cursor-pointer"
+							>
+								<a
+									class="block text-sm sm:text-base py-2 px-7"
+									href="#"
+									>Home</a
+								>
+							</li>
+							<li
+								class="text-white bg-redOrange transition-all duration-200 cursor-pointer"
+							>
+								<a
+									class="block text-sm sm:text-base py-2 px-7"
+									href="#"
+									>About us</a
+								>
+							</li>
+							<li
+								class="hover:bg-redOrange hover:text-white dark:text-white transition-all duration-200 cursor-pointer"
+							>
+								<a
+									class="block text-sm sm:text-base py-2 px-7"
+									href="#"
+									>Upskill</a
+								>
+							</li>
+							<li
+								class="hover:bg-redOrange hover:text-white dark:text-white transition-all duration-200 cursor-pointer"
+							>
+								<a
+									class="block text-sm sm:text-base py-2 px-7"
+									href="#"
+								>
+									Contact us
+								</a>
+							</li>
+						</ul>
+
+						<!-- Horizontal line display extra small screen to small screen -->
+						<span
+							class="block sm:hidden w-full h-[1px] bg-gray-400 dark:bg-slate-700 my-5"
+						></span>
+
+						<!-- Buttons display extra small screen to small screen -->
+						<div class="flex sm:hidden flex-col gap-5 px-5">
+							<button
+								class="flex items-center justify-center gap-2 sm:gap-5 px-3 py-2 rounded-full bg-transparent text-sm sm:text-base hover:bg-redOrange hover:text-white dark:text-white border-2 border-slate-800 dark:border-white hover:border-redOrange transition-all duration-200 active:scale-95 mode-switch-2"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									class="size-5 sm:size-6 inline-block dark:hidden"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+									/>
+								</svg>
+
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									class="size-5 sm:size-6 hidden dark:inline-block"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+									/>
+								</svg>
+								Switch Mode
+							</button>
+							<button
+								class="bg-redOrange hover:bg-transparent text-sm sm:text-base text-white hover:text-redOrange px-3 sm:px-5 py-2 border-2 border-redOrange rounded-lg transition-all duration-200 active:scale-95"
+							>
+								Register Interest
+							</button>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<!-- Hero Section -->
+		<section
+			class="relative bg-[url('/src/img/banner-bg.png')] bg-center bg-cover text-center"
+		>
+			<div
+				class="px-5 sm:px-20 md:px-28 lg:px-40 py-10 sm:py-20 backdrop-brightness-100 dark:backdrop-brightness-[0.65] size-full"
+			>
+				<p
+					class="text-sm sm:text-lg font-bold text-white mb-5 tracking-wide"
+				>
+					Discover
+					<span class="text-redOrange"> - </span>
+					Interact
+					<span class="text-redOrange"> - </span>
+					Engage
+				</p>
+
+				<h1
+					class="text-[30px] sm:text-[40px] lg:text-[56px] font-bold text-white leading-[45px] sm:leading-[60px] lg:leading-[75px]"
+				>
+					Connecting
+					<span
+						class="text-redOrange underline decoration-[3px] underline-offset-8"
+						>talent</span
+					>
+					to opportunity through
+					<span
+						class="text-redOrange underline decoration-[3px] underline-offset-8"
+						>skills</span
+					>
+				</h1>
+
+				<p
+					class="text-sm sm:text-lg lg:text-xl text-white mt-7 sm:mt-10 leading-[22px] sm:leading-[30px] lg:leading-[36px]"
+				>
+					We foster a skill-focused environment, enabling students to
+					navigate their careers with their self-paced learning
+					journey and businesses to gain market-ready talent.
+				</p>
+
+				<button
+					class="bg-white hover:bg-redOrange text-redOrange hover:text-white active:scale-95 text-sm sm:text-lg font-bold px-5 sm:px-8 py-2 sm:py-3 border-2 border-white rounded-full mt-10 transition-all duration-200"
+				>
+					Ask questions
+				</button>
+
+				<div class="h-[100px] sm:h-[180px]"></div>
+			</div>
+			<div
+				class="absolute left-0 bottom-[-1px] h-[100px] sm:h-[180px] w-full"
+			>
+				<img
+					class="size-full inline-block dark:hidden"
+					src="./src/img/wave.png"
+					alt="wave"
+				/>
+				<img
+					class="size-full hidden dark:inline-block"
+					src="./src/img/wave-for-dark.png"
+					alt="wave"
+				/>
+			</div>
+		</section>
+
+		<!-- Empower Section -->
+		<section
+			class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center gap-7 lg:gap-10 px-5 sm:px-10 md:px-14 lg:px-20 mb-3"
+		>
+			<h2
+				class="col-span-full xl:col-span-1 text-center xl:text-start text-[25px] sm:text-[32px] md:text-[40px] font-bold dark:text-white"
+			>
+				At
+				<span
+					class="text-redOrange underline decoration-2 underline-offset-8"
+				>
+					C4U</span
+				>, We Empower:
+			</h2>
+
+			<div
+				class="bg-bunting rounded-xl px-5 py-8 h-full hover:scale-105 transition-all duration-200"
+			>
+				<div
+					class="flex items-center justify-center bg-white size-12 rounded-full mb-3"
+				>
+					<img src="./src/img/reword-icon.png" alt="reword-icon" />
+				</div>
+				<h5
+					class="text-lg text-white tracking-wider sm:tracking-wide mb-5"
+				>
+					Students
+				</h5>
+				<p
+					class="text-xs sm:text-sm text-white/70 font-extralight tracking-wider"
+				>
+					We help students find their way in a fast-evolving world by
+					creating a personalized learning journey guaranteed to help
+					stand out in a crowded job market.
+				</p>
+			</div>
+
+			<div
+				class="bg-bunting rounded-xl px-5 py-8 h-full hover:scale-105 transition-all duration-200"
+			>
+				<div
+					class="flex items-center justify-center bg-white size-12 rounded-full mb-3"
+				>
+					<img
+						src="./src/img/academic-cap-icon.png"
+						alt="academic-cap-icon"
+					/>
+				</div>
+				<h5
+					class="text-lg text-white tracking-wider sm:tracking-wide mb-5"
+				>
+					Universities
+				</h5>
+				<p
+					class="text-xs sm:text-sm text-white/70 font-extralight tracking-wider"
+				>
+					We help your emerging talent to unlock their full potential
+					by combining education and work to create future-ready
+					employees
+				</p>
+			</div>
+
+			<div
+				class="col-span-1 sm:col-span-2 lg:col-span-1 bg-bunting rounded-xl px-5 py-8 h-full hover:scale-105 transition-all duration-200"
+			>
+				<div
+					class="flex items-center justify-center bg-white size-12 rounded-full mb-3"
+				>
+					<img src="./src/img/person-icon.png" alt="person-icon" />
+				</div>
+				<h5
+					class="text-lg text-white tracking-wider sm:tracking-wide mb-5"
+				>
+					Businesses
+				</h5>
+				<p
+					class="text-xs sm:text-sm text-white/70 font-extralight tracking-wider"
+				>
+					We enable businesses to tap into the diverse pool of
+					emerging talent cultivated by universities. To co-create the
+					future workforce and revitalize the business world.
+				</p>
+			</div>
+		</section>
+
+		<!-- Mission Section -->
+		<section
+			class="flex flex-col-reverse md:flex-row justify-center items-center gap-y-10 gap-x-20 bg-[url('/src/img/about-bg.png')] dark:bg-[url('/src/img/about-bg-for-dark.png')] bg-right-top bg-cover pt-14 sm:pt-40 px-5 sm:px-20 relative"
+		>
+			<!-- Line & Circle -->
+			<img
+				class="absolute top-1/2 hidden md:inline-block md:h-[1060px] lg:max-[1130px]:h-[1150px] lg:h-[1250px] xl:h-[1350px]"
+				src="./src/img/line-&-circle.png"
+				alt="line-&-circle"
+			/>
+			<!-- Mission Left Section -->
+			<section class="w-full md:w-1/2">
+				<span class="text-redOrange text-xs sm:text-sm uppercase">
+					About us
+				</span>
+
+				<h3
+					class="text-slate-800 dark:text-white text-2xl sm:text-4xl font-medium tracking-wide mt-2 sm:mt-5 mb-5 sm:mb-10"
+				>
+					Our Mission
+				</h3>
+
+				<p
+					class="text-slate-800 dark:text-white text-sm sm:text-base font-extralight"
+				>
+					To create a personalized pathway for continuous learning and
+					transferable skills development.
+				</p>
+
+				<button
+					class="flex items-center justify-center gap-3 bg-transparent hover:bg-redOrange text-redOrange hover:text-white active:scale-95 text-sm sm:text-base font-bold tracking-wider sm:tracking-wide px-5 sm:px-8 py-2 sm:py-3 border-2 border-redOrange rounded-full mt-10 transition-all duration-200 group"
+				>
+					Find out more
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 -1 24 24"
+						stroke-width="3"
+						stroke="currentColor"
+						class="size-4 group-hover:translate-x-1 transition-transform duration-200"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+						/>
+					</svg>
+				</button>
+			</section>
+
+			<!-- Mission Right Section -->
+			<section class="w-full md:w-1/2">
+				<img
+					class="mx-auto"
+					src="./src/img/mission-img.png"
+					alt="mission-img"
+				/>
+			</section>
+		</section>
+
+		<!-- Vision Section -->
+		<section
+			class="flex flex-col md:flex-row justify-center items-center gap-y-10 gap-x-20 bg-[url('/src/img/about-bg.png')] dark:bg-[url('/src/img/about-bg-for-dark.png')] bg-left-top bg-cover pt-14 sm:pt-40 px-5 sm:px-20 mb-10 sm:mb-28 md:mb-60"
+		>
+			<!-- Vision Left Section -->
+			<section class="w-full md:w-1/2">
+				<img
+					class="mx-auto"
+					src="./src/img/vision-img.png"
+					alt="mission-img"
+				/>
+			</section>
+
+			<!-- Vision Right Section -->
+			<section class="w-full md:w-1/2">
+				<span class="text-redOrange text-xs sm:text-sm uppercase">
+					About us
+				</span>
+
+				<h3
+					class="text-slate-800 dark:text-white text-2xl sm:text-4xl font-medium tracking-wide mt-2 sm:mt-5 mb-5 sm:mb-10"
+				>
+					Our Vision
+				</h3>
+
+				<p
+					class="text-slate-800 dark:text-white text-sm sm:text-base font-extralight"
+				>
+					To have a globally recognized strategic bridge between
+					education and the job market
+				</p>
+
+				<button
+					class="flex items-center justify-center gap-3 bg-transparent hover:bg-redOrange text-redOrange hover:text-white active:scale-95 text-sm sm:text-base font-bold tracking-wider sm:tracking-wide px-5 sm:px-8 py-2 sm:py-3 border-2 border-redOrange rounded-full mt-10 transition-all duration-200 group"
+				>
+					Contact us
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 -1 24 24"
+						stroke-width="3"
+						stroke="currentColor"
+						class="size-4 group-hover:translate-x-1 transition-transform duration-200"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+						/>
+					</svg>
+				</button>
+			</section>
+		</section>
+
+		<!-- C4U Working Steps Section -->
+		<section
+			class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center justify-items-center gap-y-10 gap-x-20 px-8 py-14 sm:p-20 sm:pt-40 bg-white dark:bg-gray-900"
+		>
+			<section
+				class="bg-[url('/src/img/1.png')] bg-no-repeat bg-right-top w-full transition-all duration-200 group"
+			>
+				<div
+					class="flex items-center justify-center bg-white group-hover:bg-gray-100 dark:bg-slate-800 dark:group-hover:bg-slate-700 size-16 rounded-full mb-8 transition-all duration-200"
+				>
+					<img src="./src/img/bulb-icon.png" alt="bulb-icon" />
+				</div>
+
+				<h4
+					class="text-lg sm:text-2xl text-slate-800 dark:text-white font-bold tracking-wide mb-5"
+				>
+					Discover
+				</h4>
+
+				<p
+					class="text-xs sm:text-sm text-slate-800 dark:text-white/90 font-extralight tracking-wider !leading-[24px]"
+				>
+					We uncover students unique skills to stand out in a crowded
+					job market
+				</p>
+			</section>
+
+			<section
+				class="bg-[url('/src/img/2.png')] bg-no-repeat bg-right-top w-full transition-all duration-200 group"
+			>
+				<div
+					class="flex items-center justify-center bg-white group-hover:bg-gray-100 dark:bg-slate-800 dark:group-hover:bg-slate-700 size-16 rounded-full mb-8 transition-all duration-200"
+				>
+					<img
+						src="./src/img/ruler-pencil-icon.png"
+						alt="ruler-pencil-icon"
+					/>
+				</div>
+
+				<h4
+					class="text-lg sm:text-2xl text-slate-800 dark:text-white font-bold tracking-wide mb-5"
+				>
+					Interact
+				</h4>
+
+				<p
+					class="text-xs sm:text-sm text-slate-800 dark:text-white/90 font-extralight tracking-wider !leading-[24px]"
+				>
+					We open doors to new opportunities by expanding your
+					transferable skills
+				</p>
+			</section>
+
+			<section
+				class="grid-cols-1 sm:col-span-2 lg:col-span-1 bg-[url('/src/img/3.png')] bg-no-repeat bg-right-top w-full transition-all duration-200 group"
+			>
+				<div
+					class="flex items-center justify-center bg-white group-hover:bg-gray-100 dark:bg-slate-800 dark:group-hover:bg-slate-700 size-16 rounded-full mb-8 transition-all duration-200"
+				>
+					<img
+						src="./src/img/up-navigation-icon.png"
+						alt="up-navigation-icon"
+					/>
+				</div>
+
+				<h4
+					class="text-lg sm:text-2xl text-slate-800 dark:text-white font-bold tracking-wide mb-5"
+				>
+					Engage
+				</h4>
+
+				<p
+					class="text-xs sm:text-sm text-slate-800 dark:text-white/90 font-extralight tracking-wider !leading-[24px]"
+				>
+					To forester a skill focused environment that enable students
+					to navigate their ideal career
+				</p>
+			</section>
+		</section>
+
+		<!-- Team Section -->
+		<section
+			class="px-8 md:px-14 py-20 bg-[url('/src/img/team-bg.png')] dark:bg-[url('/src/img/team-bg-for-dark.png')] bg-center bg-cover"
+		>
+			<h2
+				class="text-[25px] sm:text-[32px] md:text-[40px] font-semibold dark:text-white relative inline-block"
+			>
+				The Creative Team <br />
+				behind
+				<span class="text-redOrange"> the door </span>
+
+				<img
+					class="absolute top-14 -right-28 hidden sm:inline-block"
+					src="./src/img/arrow_01.png"
+					alt="arrow"
+				/>
+			</h2>
+
+			<div
+				class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center gap-5 md:gap-10 text-center mt-20"
+			>
+				<div
+					class="flex flex-col justify-center items-center bg-white dark:bg-gray-900 px-5 py-10 w-full rounded-xl shadow-xl hover:scale-105 transition-all duration-200 cursor-pointer"
+				>
+					<img
+						class="rounded-full mb-8"
+						src="./src/img/team-01.png"
+						alt="team"
+					/>
+
+					<h4
+						class="text-lg sm:text-2xl text-slate-800 dark:text-white font-bold text-nowrap tracking-wide mb-2"
+					>
+						Ekta Mahajan
+					</h4>
+
+					<span
+						class="text-xs sm:text-base text-black/50 dark:text-white/50 mb-8"
+					>
+						Founder & C.E.O
+					</span>
+
+					<div class="flex gap-5">
+						<a href="#">
+							<img
+								src="./src/img/phone-icon.png"
+								alt="phone-icon"
+							/>
+						</a>
+						<a href="#">
+							<img
+								src="./src/img/mail-icon.png"
+								alt="mail-icon"
+							/>
+						</a>
+						<a href="#">
+							<img
+								src="./src/img/linkedin-icon.png"
+								alt="linkedin-icon"
+							/>
+						</a>
+					</div>
+				</div>
+
+				<div
+					class="flex flex-col justify-center items-center bg-white dark:bg-gray-900 px-5 py-10 w-full rounded-xl shadow-xl hover:scale-105 transition-all duration-200 cursor-pointer"
+				>
+					<img
+						class="rounded-full mb-8"
+						src="./src/img/team-02.png"
+						alt="team"
+					/>
+
+					<h4
+						class="text-lg sm:text-2xl text-slate-800 dark:text-white font-bold text-nowrap tracking-wide mb-2"
+					>
+						Toby Potter-Drake
+					</h4>
+
+					<span
+						class="text-xs sm:text-base text-black/50 dark:text-white/50 mb-8"
+					>
+						Product Manager Associate
+					</span>
+
+					<div class="flex gap-5">
+						<a href="#">
+							<img
+								src="./src/img/phone-icon.png"
+								alt="phone-icon"
+							/>
+						</a>
+						<a href="#">
+							<img
+								src="./src/img/mail-icon.png"
+								alt="mail-icon"
+							/>
+						</a>
+						<a href="#">
+							<img
+								src="./src/img/linkedin-icon.png"
+								alt="linkedin-icon"
+							/>
+						</a>
+					</div>
+				</div>
+
+				<div
+					class="flex flex-col justify-center items-center bg-white dark:bg-gray-900 px-5 py-10 w-full rounded-xl shadow-xl hover:scale-105 transition-all duration-200 cursor-pointer"
+				>
+					<img
+						class="rounded-full mb-8"
+						src="./src/img/team-03.png"
+						alt="team"
+					/>
+
+					<h4
+						class="text-lg sm:text-2xl text-slate-800 dark:text-white font-bold text-nowrap tracking-wide mb-2"
+					>
+						Ross Davies
+					</h4>
+
+					<span
+						class="text-xs sm:text-base text-black/50 dark:text-white/50 mb-8"
+					>
+						Corporate Growth Associate
+					</span>
+
+					<div class="flex gap-5">
+						<a href="#">
+							<img
+								src="./src/img/phone-icon.png"
+								alt="phone-icon"
+							/>
+						</a>
+						<a href="#">
+							<img
+								src="./src/img/mail-icon.png"
+								alt="mail-icon"
+							/>
+						</a>
+						<a href="#">
+							<img
+								src="./src/img/linkedin-icon.png"
+								alt="linkedin-icon"
+							/>
+						</a>
+					</div>
+				</div>
+
+				<div
+					class="flex flex-col justify-center items-center bg-white dark:bg-gray-900 px-5 py-10 w-full rounded-xl shadow-xl hover:scale-105 transition-all duration-200 cursor-pointer"
+				>
+					<img
+						class="rounded-full mb-8"
+						src="./src/img/team-04.png"
+						alt="team"
+					/>
+
+					<h4
+						class="text-lg sm:text-2xl text-slate-800 dark:text-white font-bold text-nowrap tracking-wide mb-2"
+					>
+						Leo crozier
+					</h4>
+
+					<span
+						class="text-xs sm:text-base text-black/50 dark:text-white/50 mb-8"
+					>
+						Software Developer
+					</span>
+
+					<div class="flex gap-5">
+						<a href="#">
+							<img
+								src="./src/img/phone-icon.png"
+								alt="phone-icon"
+							/>
+						</a>
+						<a href="#">
+							<img
+								src="./src/img/mail-icon.png"
+								alt="mail-icon"
+							/>
+						</a>
+						<a href="#">
+							<img
+								src="./src/img/linkedin-icon.png"
+								alt="linkedin-icon"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer Section -->
+		<footer
+			class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-10 py-16 px-8 sm:px-20"
+		>
+			<div>
+				<div class="mb-5">
+					<!-- Logo for light theme -->
+					<img
+						class="inline-block dark:hidden cursor-pointer"
+						src="./src/img/logo.svg"
+						alt="logo"
+					/>
+
+					<!-- Logo for dark theme -->
+					<img
+						class="hidden dark:inline-block cursor-pointer"
+						src="./src/img/logo-for-dark.svg"
+						alt="logo"
+					/>
+				</div>
+
+				<address
+					class="flex flex-col gap-y-1 dark:text-white leading-loose not-italic"
+				>
+					<span class="text-nowrap">Level 39</span>
+					<span class="text-nowrap">One Canada Square,</span>
+					<span class="text-nowrap">Canary Wharf,</span>
+					<span class="text-nowrap">London,</span>
+					<span class="text-nowrap">E14 5AB</span>
+				</address>
+			</div>
+
+			<ul
+				class="flex flex-col gap-5 text-slate-900 dark:text-white text-sm sm:text-base"
+			>
+				<li class="text-base sm:text-lg font-bold">
+					<a
+						class="hover:text-redOrange transition-all duration-200"
+						href="#"
+					>
+						Home
+					</a>
+				</li>
+				<li>
+					<a
+						class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
+						href="#"
+					>
+						Collaborations
+					</a>
+				</li>
+				<li>
+					<a
+						class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
+						href="#"
+					>
+						Statistics
+					</a>
+				</li>
+				<li>
+					<a
+						class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
+						href="#"
+					>
+						How It Works
+					</a>
+				</li>
+				<li>
+					<a
+						class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
+						href="#"
+					>
+						Testimonials
+					</a>
+				</li>
+			</ul>
+			<ul
+				class="flex flex-col gap-5 text-slate-900 dark:text-white text-sm sm:text-base"
+			>
+				<li class="text-base sm:text-lg font-bold">
+					<a
+						class="hover:text-redOrange transition-all duration-200"
+						href="#"
+					>
+						About Us
+					</a>
+				</li>
+				<li>
+					<a
+						class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
+						href="#"
+					>
+						Who We Are
+					</a>
+				</li>
+				<li>
+					<a
+						class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
+						href="#"
+					>
+						Mission statement
+					</a>
+				</li>
+				<li>
+					<a
+						class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
+						href="#"
+					>
+						Our Vision
+					</a>
+				</li>
+				<li>
+					<a
+						class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
+						href="#"
+					>
+						The Team
+					</a>
+				</li>
+			</ul>
+			<ul
+				class="flex flex-col gap-5 text-slate-900 dark:text-white text-sm sm:text-base"
+			>
+				<li class="text-base sm:text-lg font-bold">
+					<a
+						class="hover:text-redOrange transition-all duration-200"
+						href="#"
+					>
+						Upskill
+					</a>
+				</li>
+				<li>
+					<a
+						class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
+						href="#"
+					>
+						It Support
+					</a>
+				</li>
+				<li>
+					<a
+						class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
+						href="#"
+					>
+						Project Management
+					</a>
+				</li>
+				<li>
+					<a
+						class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
+						href="#"
+					>
+						Data Analysts
+					</a>
+				</li>
+				<li>
+					<a
+						class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
+						href="#"
+					>
+						Ux Design
+					</a>
+				</li>
+			</ul>
+			<ul
+				class="flex flex-col gap-5 text-slate-900 dark:text-white text-sm sm:text-base"
+			>
+				<li class="text-base sm:text-lg font-bold">
+					<a
+						class="hover:text-redOrange transition-all duration-200"
+						href="#"
+					>
+						Contact Us
+					</a>
+				</li>
+				<li>
+					<a
+						class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
+						href="#"
+					>
+						Your message
+					</a>
+				</li>
+				<li>
+					<a
+						class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
+						href="#"
+					>
+						Email
+					</a>
+				</li>
+				<li>
+					<a
+						class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
+						href="#"
+					>
+						Phone number
+					</a>
+				</li>
+				<li>
+					<a
+						class="text-slate-900/70 dark:text-white/70 hover:text-redOrange dark:hover:text-redOrange transition-all duration-200"
+						href="#"
+					>
+						Linkedin
+					</a>
+				</li>
+			</ul>
+		</footer>
+
+		<!-- Copyright Section -->
+		<p
+			class="dark:text-white text-center text-xs sm:text-sm py-5 border-t border-gray-400 dark:border-gray-700 font-extralight tracking-wider"
+		>
+			Copyright © 2024 Creatives For You LTD.
+		</p>
+
+		<script>
+			const htmlTag = document.querySelector("html"),
+				modeSwitch = document.querySelector(".mode-switch"),
+				modeSwitch2 = document.querySelector(".mode-switch-2"),
+				phoneMenu = document.querySelector(".phoneMenu"),
+				phoneNav = document.querySelector(".phoneNav");
+
+			modeSwitch.addEventListener("click", function () {
+				htmlTag.classList.toggle("dark");
+			});
+
+			modeSwitch2.addEventListener("click", function () {
+				htmlTag.classList.toggle("dark");
+			});
+
+			phoneMenu.addEventListener("click", () => {
+				phoneNav.classList.toggle("hidden");
+			});
+		</script>
+	</body>
 </html>
